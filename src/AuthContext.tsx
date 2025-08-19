@@ -54,7 +54,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
           email: firebaseUser.email,
           displayName: firebaseUser.displayName,
           photoURL: firebaseUser.photoURL,
-          favoriteTeam: '', // Initialize as empty
           createdAt: new Date().toISOString(),
           lastLogin: new Date().toISOString()
         });
@@ -67,7 +66,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       }
     } catch (error) {
       console.error('Error creating/updating user document:', error);
-      // Don't throw error here - user can still use the app even if Firestore fails
     }
   };
 

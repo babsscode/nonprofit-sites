@@ -307,7 +307,6 @@ const removeTeamMemberPhoto = (index: number): void => {
       setCurrentWebsite(publishedWebsite);
       
       // Show success message or navigate
-      // You might want to show a success toast here
       console.log('Website published successfully!');
       
     } catch (error) {
@@ -488,7 +487,7 @@ const removeTeamMemberPhoto = (index: number): void => {
               </button>
             </div>
 
-            {/* Center Section - Absolutely Centered */}
+            {/* Center Section */}
             <div className="absolute left-1/2 transform -translate-x-1/2">
               <div className="flex items-center text-gray-700 font-medium text-md md:text-lg ">
                 <span>Website Preview</span>

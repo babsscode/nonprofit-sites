@@ -1,0 +1,5 @@
+- show link open logo after clikcing publish on preview
+
+
+
+optional donate page and optional google form in get involved page and optional contact us page

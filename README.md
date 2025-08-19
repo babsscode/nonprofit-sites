@@ -1,5 +1,11 @@
 # Nonprofit Sites
 
+## ⚠ License
+© 2025 Nonprofit Sites  
+**All rights reserved.**  
+Please do not use, copy, modify, or distribute this code or any part of this project without explicit permission from the author.
+
+
 ## Inspiration
 As a freelance web builder I have websites for many small nonprofits. Over the years I realized that most of these organizations had the same problem. They didn't have the resources, time, or tech skills to build a website. Furthermore, all they wanted was a clean looking website that presented their missions, provided volunteer sign up, and their donation links.
 

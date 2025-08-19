@@ -22,14 +22,13 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
 
     getCurrentUser();
 
-    // Listen for auth state changes - fix: handle both event and session parameters
+    // Listen for auth state changes
     const { data: { subscription } } = authService.onAuthStateChange((event, session) => {
-      console.log('Auth event:', event, 'Session:', session); // Debug log
+      console.log('Auth event:', event, 'Session:', session);
       setUser(session?.user || null);
       setIsLoading(false);
     });
 
-    // Cleanup subscription on unmount
     return () => {
       subscription?.unsubscribe();
     };
